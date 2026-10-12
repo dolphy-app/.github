@@ -1,0 +1,26 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect and what did you get instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Dolphy version
+      description: Settings → About, or the name of the installer you used.
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [macOS, Windows, Linux]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Optional, but they help a lot.
